@@ -7,12 +7,12 @@ const About = () => {
       <div className="container mx-auto px-6 md:px-20 relative z-10">
         <div className="max-w-4xl">
           {/* Section Title */}
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-10 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-10 tracking-tight">
             About Me
           </h2>
 
           {/* Description */}
-          <p className="text-gray-400 text-lg leading-relaxed mb-20 max-w-2xl font-light">
+          <p className="text-gray-400 text-xl leading-relaxed mb-20 max-w-2xl font-light">
             I'm a self-taught software developer with a strong focus on building
             modern, high-quality web and mobile applications. I enjoy solving
             complex problems and continuously learning new technologies. My goal
@@ -23,8 +23,8 @@ const About = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-y-14 gap-x-20 border-t border-white/10 pt-12">
             <div>
-              <h3 className="text-4xl font-bold text-white mb-2">
-                20<span className="text-[#dd5953] text-3xl">+</span>
+              <h3 className="text-5xl font-bold text-white mb-2">
+                20<span className="text-[#dd5953] text-5xl">+</span>
               </h3>
               <p className="text-sm text-gray-500 font-medium leading-snug">
                 Completed <br /> Projects
@@ -32,8 +32,8 @@ const About = () => {
             </div>
 
             <div>
-              <h3 className="text-4xl font-bold text-white mb-2">
-                95<span className="text-[#dd5953] text-3xl">%</span>
+              <h3 className="text-5xl font-bold text-white mb-2">
+                95<span className="text-[#dd5953] text-5xl">%</span>
               </h3>
               <p className="text-sm text-gray-500 font-medium leading-snug">
                 Client <br /> Satisfaction
@@ -41,8 +41,8 @@ const About = () => {
             </div>
 
             <div>
-              <h3 className="text-4xl font-bold text-white mb-2">
-                2.5<span className="text-[#dd5953] text-3xl">+</span>
+              <h3 className="text-5xl font-bold text-white mb-2">
+                2.5<span className="text-[#dd5953] text-5xl">+</span>
               </h3>
               <p className="text-sm text-gray-500 font-medium leading-snug">
                 Years <br /> Experience
