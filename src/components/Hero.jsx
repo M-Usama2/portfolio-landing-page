@@ -65,7 +65,7 @@ const Hero = () => {
           <img
             src={character} // replace with your vector image
             alt="Developer illustration"
-            className="w-[600px] h-[600px]  relative z-10 drop-shadow-2xl"
+            className="w-[500px] h-[500px]  relative z-10 drop-shadow-2xl"
           />
         </div>
       </div>
