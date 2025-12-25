@@ -1,3 +1,6 @@
+// import character from "../assets/character.png";
+import character from "../assets/character3.png";
+
 const Hero = () => {
   return (
     <section
@@ -22,7 +25,7 @@ const Hero = () => {
 
           <h1 className="text-6xl md:text-6xl font-bold text-white leading-tight whitespace-nowrap">
             Software
-            <span className="text-gray-300 font-semibold">Engineer</span>
+            <span className="text-gray-300 font-semibold"> Engineer</span>
           </h1>
 
           {/* Buttons */}
@@ -56,17 +59,14 @@ const Hero = () => {
         {/* RIGHT HERO VISUAL */}
         <div className="relative flex justify-center items-center animate-in slide-in-from-right duration-700">
           {/* Circle frame */}
-          <div className="relative w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full border border-[#dd5953]/40 flex items-center justify-center">
-            {/* Inner glow */}
-            <div className="absolute inset-6 rounded-full border border-[#dd5953]/20" />
+          {/* Inner glow */}
 
-            {/* Image / Vector */}
-            <img
-              src="/hero-dev.png" // replace with your vector image
-              alt="Developer illustration"
-              className="w-[85%] relative z-10 drop-shadow-2xl"
-            />
-          </div>
+          {/* Image / Vector */}
+          <img
+            src={character} // replace with your vector image
+            alt="Developer illustration"
+            className="w-[600px] h-[600px]  relative z-10 drop-shadow-2xl"
+          />
         </div>
       </div>
     </section>

@@ -40,6 +40,7 @@ const skills = [
   { name: "Stripe", icon: CreditCard },
   { name: "Git", icon: GitBranch },
   { name: "GitHub", icon: Github },
+  { name: "React Native", icon: AppWindow },
 ];
 
 const Skills = () => {

@@ -1,29 +1,66 @@
 import { ExternalLink, Github } from "lucide-react";
+import gerrys from "../assets/gerrys.png";
+import astra from "../assets/astra.png";
+import dashboard from "../assets/astra-dashboard.png";
+import food from "../assets/Food.png";
+import jarvis from "../assets/jarvis.png";
+import sportsApp from "../assets/sports-app.png";
+import telkom from "../assets/telkom1.png";
 
 const projects = [
   {
-    title: "Visionary Architecture",
-    category: "Web Development",
+    title: "Astra Landing Page",
+    category: "Website",
     description:
-      "Architectural portfolio platform featuring immersive layouts and modern UI.",
+      "Astra Landing Page is a modern and responsive landing page for a fashion brand with smooth animations.",
+    link: "https://astra.com.pk/",
+    image: astra,
   },
   {
-    title: "E-Shop Landing Page",
-    category: "E-Commerce",
+    title: "Astra Dashboard (Sabre - PowerSuite)",
+    category: "Business System",
     description:
-      "High-converting landing page for a fashion brand with smooth animations.",
+      "Astra Dashboard is a modern and responsive dashboard for a fashion brand with smooth animations.",
+    link: "https://astra.com.pk/login",
+    image: dashboard,
   },
   {
-    title: "Crypto Tracker App",
+    title: "Food Delivery App",
+    category: "Mobile App",
+    description:
+      "Food Delivery App is a modern and responsive app for a fashion brand with smooth animations.",
+    link: "https://pizzeria-frontend-vjur.onrender.com/",
+    image: food,
+  },
+  {
+    title: "Gerrys Group Website",
     category: "Fintech",
     description:
-      "Real-time crypto dashboard with live prices, charts, and portfolio tracking.",
+      "Gerrys Group Website is a modern and responsive website for a fashion brand with smooth animations.",
+    link: "https://gerrys.com.pk/",
+    image: gerrys,
   },
   {
-    title: "Crypto Tracker App",
-    category: "Fintech",
+    title: "Jarvis AI Chatbot",
+    category: "Website",
     description:
       "Real-time crypto dashboard with live prices, charts, and portfolio tracking.",
+    link: "https://jarvistechglobal.com/",
+    image: jarvis,
+  },
+  {
+    title: "Sports App",
+    category: "Mobile App",
+    description:
+      "Sports App is a modern and responsive app for a fashion brand with smooth animations.",
+    image: sportsApp,
+  },
+  {
+    title: "Telkom App",
+    category: "Mobile App",
+    description:
+      "Telkom App is a modern and responsive app for a fashion brand with smooth animations.",
+    image: telkom,
   },
 ];
 
@@ -50,10 +87,18 @@ const Portfolio = () => {
               className="group bg-[#151b27] border border-white/5 rounded-2xl overflow-hidden hover:bg-[#1c2233] hover:border-[#dd5953]/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#dd5953]/5"
             >
               {/* Image Placeholder */}
-              <div className="relative h-48 bg-gradient-to-br from-[#1c2233] to-[#0f1420] flex items-center justify-center">
-                <span className="text-white/10 font-bold text-5xl select-none">
-                  APP
-                </span>
+              <div className="relative h-72 bg-gradient-to-br from-[#1c2233] to-[#0f1420] flex items-center justify-center">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <span className="text-white/10 font-bold text-5xl select-none">
+                    APP
+                  </span>
+                )}
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300" />
               </div>
 
@@ -72,19 +117,15 @@ const Portfolio = () => {
                 </p>
 
                 {/* Actions */}
-                <div className="flex items-center gap-3">
-                  <button className="flex-1 py-2 rounded-lg bg-[#dd5953] text-sm font-semibold text-white hover:bg-[#e66a65] transition-colors">
-                    View Project
-                  </button>
-
-                  <button className="p-2 rounded-lg border border-white/5 text-gray-400 hover:text-white hover:border-[#dd5953]/30 transition">
-                    <Github size={18} />
-                  </button>
-
-                  <button className="p-2 rounded-lg border border-white/5 text-gray-400 hover:text-white hover:border-[#dd5953]/30 transition">
-                    <ExternalLink size={18} />
-                  </button>
-                </div>
+                {project.link ? (
+                  <div className="flex items-center gap-3">
+                    <a target="_blank" href={project.link}>
+                      <button className="p-2 cursor-pointer rounded-lg border border-white/5 text-gray-400 hover:text-white hover:border-[#dd5953]/30 transition">
+                        <ExternalLink size={18} />
+                      </button>
+                    </a>
+                  </div>
+                ) : null}
               </div>
             </div>
           ))}
