@@ -46,19 +46,19 @@
   --radius: 0.5rem;
   
   /* Exact Reference Colors */
-  /* Background: Deep Navy #0B1221 */
-  --background: #0B1221; 
+  /* Background: Deep Navy #0f1420 */
+  --background: #0f1420; 
   --foreground: #FFFFFF;
 
-  /* Card: Lighter Navy #161E2E */
-  --card: #161E2E;
+  /* Card: Lighter Navy #151b27 */
+  --card: #151b27;
   --card-foreground: #FFFFFF;
 
-  --popover: #161E2E;
+  --popover: #151b27;
   --popover-foreground: #FFFFFF;
 
-  /* Primary: Salmon/Coral Red #FF6B58 */
-  --primary: #FF6B58;
+  /* Primary: Salmon/Coral Red #dd5953 */
+  --primary: #dd5953;
   --primary-foreground: #FFFFFF;
 
   /* Secondary: Muted Blue-Grey for tags/borders */
@@ -68,15 +68,15 @@
   --muted: #1F2937;
   --muted-foreground: #9CA3AF;
 
-  --accent: #262E3F;
+  --accent: #1c2233;
   --accent-foreground: #FFFFFF;
 
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
 
-  --border: rgba(255, 255, 255, 0.08);
-  --input: rgba(255, 255, 255, 0.08);
-  --ring: #FF6B58;
+  --border: rgba(255, 255, 255, 0.05);
+  --input: rgba(255, 255, 255, 0.05);
+  --ring: #dd5953;
 }
 
 @layer base {
@@ -84,7 +84,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
     font-family: 'Outfit', sans-serif;
   }
 }

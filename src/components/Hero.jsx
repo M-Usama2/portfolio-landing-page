@@ -1,29 +1,29 @@
 // import character from "../assets/character.png";
-import character from "../assets/character3.png";
+import character from "../assets/character.png";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[85vh] flex items-center overflow-hidden bg-[#0f1420]"
+      className="relative min-h-screen pt-20 flex items-center overflow-hidden bg-background"
     >
       {/* Background glow */}
-      <div className="absolute -right-40 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#dd5953]/20 blur-[120px]" />
-      <div className="absolute -left-40 bottom-0 w-[400px] h-[400px] rounded-full bg-[#dd5953]/10 blur-[120px]" />
+      <div className="absolute -right-40 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/20 blur-[120px]" />
+      <div className="absolute -left-40 bottom-0 w-[400px] h-[400px] rounded-full bg-primary/10 blur-[120px]" />
 
       <div className="container mx-auto px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* LEFT CONTENT */}
         <div className="space-y-6 animate-in slide-in-from-left duration-700">
           <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight">
-            Hello <span className="text-[#dd5953]">.</span>
+            Hello <span className="text-primary">.</span>
           </h2>
 
           <div className="flex items-center gap-4">
-            <span className="h-[2px] w-12 bg-[#dd5953]" />
+            <span className="h-[2px] w-12 bg-primary" />
             <p className="text-xl text-gray-300">I'm M. Usama</p>
           </div>
 
-          <h1 className="text-6xl md:text-6xl font-bold text-white leading-tight whitespace-nowrap">
+          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
             Software
             <span className="text-gray-300 font-semibold"> Engineer</span>
           </h1>
@@ -32,13 +32,17 @@ const Hero = () => {
           <div className="flex gap-4 pt-2">
             <a
               href="#contact"
-              className="px-7 py-3 bg-[#dd5953]  text-white rounded-md text-md font-medium cursor-pointer hover:opacity-90 transition"
+              className="px-6 py-3 bg-primary text-white rounded-md text-sm md:text-md font-medium cursor-pointer hover:bg-orange-600 transition-all shadow-[0_0_20px_rgba(221,89,83,0.3)] hover:shadow-[0_0_30px_rgba(221,89,83,0.5)] active:scale-95"
             >
               Get in touch
             </a>
-            <button className="px-7 py-3 border border-gray-600 text-gray-300 rounded-md text-md cursor-pointer hover:border-gray-400 hover:text-white transition">
+            <a
+              href="/M.Usama.pdf"
+              download="M.Usama.pdf"
+              className="px-6 py-3 border border-white/10 text-gray-300 rounded-md text-sm md:text-md cursor-pointer hover:border-primary/50 hover:text-white hover:bg-white/5 transition-all active:scale-95"
+            >
               My resume
-            </button>
+            </a>
           </div>
 
           {/* Tech Stack */}
@@ -47,7 +51,7 @@ const Hero = () => {
               (item) => (
                 <span
                   key={item}
-                  className="text-gray-500 hover:text-white transition cursor-pointer"
+                  className="text-gray-500 hover:text-primary transition-colors cursor-pointer font-medium"
                 >
                   {item}
                 </span>
@@ -58,14 +62,11 @@ const Hero = () => {
 
         {/* RIGHT HERO VISUAL */}
         <div className="relative flex justify-center items-center animate-in slide-in-from-right duration-700">
-          {/* Circle frame */}
-          {/* Inner glow */}
-
           {/* Image / Vector */}
           <img
-            src={character} // replace with your vector image
+            src={character}
             alt="Developer illustration"
-            className="w-[500px] h-[500px]  relative z-10 drop-shadow-2xl"
+            className="w-[400px] h-[400px] md:w-[500px] md:h-[500px] relative z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-500"
           />
         </div>
       </div>

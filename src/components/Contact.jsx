@@ -4,15 +4,15 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-32 bg-[#0f1420] relative overflow-hidden"
+      className="py-20 md:py-32 bg-background relative overflow-hidden"
     >
       {/* Background Glow */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#dd5953]/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-20 relative z-10">
         {/* Title */}
-        <h2 className="text-4xl font-bold text-white mb-6 tracking-tight">
-          My <span className="text-[#dd5953]">Expertise</span>
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
+          Contact <span className="text-primary">Me</span>
         </h2>
 
         <p className="text-gray-400 max-w-xl mb-16">
@@ -20,12 +20,12 @@ const Contact = () => {
           to life with modern, scalable solutions.
         </p>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left – Expertise Cards */}
           <div className="space-y-6">
-            <div className="bg-[#151b27] border border-white/5 rounded-2xl p-6 hover:border-[#dd5953]/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-[#dd5953]/5">
+            <div className="bg-card border border-white/5 rounded-2xl p-6 hover:border-primary/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5">
               <div className="flex items-start gap-4">
-                <Monitor size={35} className="text-[#dd5953] mt-1" />
+                <Monitor size={35} className="text-primary mt-1" />
                 <div>
                   <h3 className="text-white text-xl font-semibold mb-2">
                     Website Development
@@ -38,9 +38,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-[#151b27] border border-white/5 rounded-2xl p-6 hover:border-[#dd5953]/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-[#dd5953]/5">
+            <div className="bg-card border border-white/5 rounded-2xl p-6 hover:border-primary/30 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5">
               <div className="flex items-start gap-4">
-                <Smartphone size={35} className="text-[#dd5953] mt-1" />
+                <Smartphone size={35} className="text-primary mt-1" />
                 <div>
                   <h3 className="text-white text-xl font-semibold mb-2">
                     App Development
@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
 
           {/* Right – Contact Summary */}
-          <div className="bg-[#151b27] border border-white/5 rounded-2xl p-8 flex flex-col justify-between">
+          <div className="bg-card border border-white/5 rounded-2xl p-8 flex flex-col justify-between">
             <div className="space-y-6">
               <div>
                 <p className="text-sm text-gray-400">Your Name</p>
@@ -63,17 +63,17 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center gap-3">
-                <Mail className="text-[#dd5953]" />
+                <Mail className="text-primary" />
                 <p className="text-white">usama.muhammad.official@gmail.com</p>
               </div>
 
               <div className="flex items-center gap-3">
-                <Phone className="text-[#dd5953]" />
+                <Phone className="text-primary" />
                 <p className="text-white">+92 312 8913022</p>
               </div>
 
               <div className="flex items-center gap-3">
-                <MapPin className="text-[#dd5953]" />
+                <MapPin className="text-primary" />
                 <p className="text-white">Pakistan</p>
               </div>
             </div>
